@@ -1,0 +1,13 @@
+@import "mixin";
+
+section.coverage {
+  h1:before {
+    content: "\F0E4";
+  }
+
+  .chart {
+    @include box;
+    border-color: #ccc;
+    margin-top: .4em;
+  }
+}
