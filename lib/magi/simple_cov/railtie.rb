@@ -1,4 +1,4 @@
-require "rails/railtie"
+require "rails/engine"
 
 module Magi
   module SimpleCov
