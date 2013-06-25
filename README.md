@@ -4,7 +4,7 @@ Magi simplecov integration plugin.
 ## Installation
 ```
 # Gemfile.local
-gem "magi-simple_cov", git: "git@github.com:r7kamura/magi-simple_cov"
+gem "magi-simple_cov", git: "git@github.com:r7kamura/magi-simple_cov.git"
 ```
 
 ## Usage
