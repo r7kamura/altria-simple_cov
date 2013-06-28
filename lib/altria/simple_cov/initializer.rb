@@ -2,7 +2,7 @@ Build.property(:coverage)
 
 Job.property(:enable_simplecov, type: :boolean)
 
-Job.after_execute { Magi::SimpleCov::Coverage.new(self).after_execute }
+Job.after_execute { Altria::SimpleCov::Coverage.new(self).after_execute }
 
 JobsController.prepend_view_path File.expand_path("../../../../app/views", __FILE__)
 

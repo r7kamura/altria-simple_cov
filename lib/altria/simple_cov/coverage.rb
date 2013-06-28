@@ -1,4 +1,4 @@
-module Magi
+module Altria
   module SimpleCov
     class Coverage
       attr_reader :job

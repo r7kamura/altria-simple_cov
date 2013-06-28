@@ -1,5 +1,5 @@
 require File.expand_path("../../../spec_helper", __FILE__)
-require "magi/simple_cov/initializer"
+require "altria/simple_cov/initializer"
 
 describe Job do
   let(:job) do
@@ -11,7 +11,7 @@ describe Job do
   end
 
   let(:coverage) do
-    Magi::SimpleCov::Coverage.any_instance
+    Altria::SimpleCov::Coverage.any_instance
   end
 
   describe "#execute" do
@@ -20,7 +20,7 @@ describe Job do
       job.stub(:execute_without_before_executes)
     end
 
-    it "executes Magi::SimpleCov::Coverage#after_execute" do
+    it "executes Altria::SimpleCov::Coverage#after_execute" do
       coverage.should_receive(:after_execute)
       job.execute
     end

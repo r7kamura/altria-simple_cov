@@ -1,6 +1,6 @@
 require File.expand_path("../../../spec_helper", __FILE__)
 
-describe Magi::SimpleCov::Coverage do
+describe Altria::SimpleCov::Coverage do
   before do
     coverage.last_run_json_path.parent.mkpath
     FileUtils.touch(coverage.last_run_json_path)
