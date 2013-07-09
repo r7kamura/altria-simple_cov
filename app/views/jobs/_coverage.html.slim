@@ -8,4 +8,4 @@ section.coverage
   .chart
     - builds = @resource.builds.finished.recent.limit(100).select(&:coverage)
     - min = (builds.map(&:coverage).min || 1) - 1
-    = line_chart builds.map {|build| [build.id.to_s, build.coverage] }, min: min, max: 100
+    = line_chart builds.map {|build| [build.created_at, build.coverage] }, min: min, max: 100
